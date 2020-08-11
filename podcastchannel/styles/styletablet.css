@@ -1,0 +1,123 @@
+@media all and (min-width: 768px) and (max-width: 1199px) {
+  .contenedor-principal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: (auto)[7];
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: "header header" "main main" "dondeveni temas" "dondeveni temas" "pc-gridimg pc-gridimg" "novedades novedades" "footer footer";
+  }
+  header {
+    height: 80px;
+    -ms-grid-columns: 7vw 1fr 4fr 6fr 7vw;
+        grid-template-columns: 7vw 1fr 4fr 6fr 7vw;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #icon-burg-check,
+  header .label-burg,
+  header .label-equis {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+  header .menu ul {
+    height: unset;
+    background: unset;
+  }
+  .logo {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 36px;
+    height: 36px;
+    background-size: 36px;
+  }
+  .menu {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+  }
+  .menu ul li a {
+    color: #060A24;
+  }
+  .menu ul li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  .menu ul li a:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
+  }
+  .main-container .lt-episodios .lt-episodios-embed iframe {
+    width: 584px;
+  }
+  .dondeveni {
+    top: -170px;
+    margin-bottom: -100px;
+  }
+  .dondeveni .dondeveni_div .dondeveni-titulo {
+    width: unset;
+    text-align: center;
+  }
+  .temas .temas-titulo {
+    width: unset;
+    text-align: center;
+  }
+  .pc-gridimg .invitados-img {
+    -ms-grid-columns: (minmax(320px, auto))[2];
+        grid-template-columns: repeat(2, minmax(320px, auto));
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "pc1  pc2" "pc3 pc4" "pc5 pc6";
+  }
+  .novedades h2 {
+    width: unset;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 3.125rem;
+  }
+  footer p {
+    margin-left: 0;
+  }
+  footer .redsocial {
+    margin-right: 3.125rem;
+  }
+  footer .redsocial a {
+    color: #060A24;
+    padding-right: 2.25rem;
+  }
+  footer .redsocial a:last-child {
+    padding-right: 0;
+  }
+}
+/*# sourceMappingURL=styletablet.css.map */

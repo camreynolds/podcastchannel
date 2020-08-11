@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Channel</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <header class="cabecera">
+            
+            <div class="logo"></div>
+            <input type="checkbox" id="burg-check" name="burg-check">
+            <nav id="menus" class="menu">
+                <ul>
+                    <li><a href="#episodios">EPISODIOS</a></li>
+                    <li><a href="#dondeveni">NOSOTROS</a></li>
+                    <li><a href="#pc-gridimg">ENTREVISTAS</a></li>
+                    <li><a href="#temas">TÓPICOS</a></li>
+                </ul>
+            </nav>
+            
+            <label for="burg-check" class="label-burg" id="label-burg"><i class="fa fa-bars"></i></label>
+            <label for="burg-check" class="label-equis" id="label-equis">&#x2716;</label>
+        </header>
+        <main class="main-container">
+            <section  class="episodios">
+                <h1>Hello <span class="tachado">world</span> pale blue dot</h1>
+                <p>podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+                </p>
+                <div class="episodios-botones">
+                    <!-- <input type="button" class="btn-channel" value="CONOCÉ MÁS"> -->
+                    <a href="#dondeveni" class="btn-channel">CONOCÉ MÁS</a>
+                </div>
+            </section>
+            <section id="episodios" class="lt-episodios">
+                <svg class="episodio-backgound-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                    preserveAspectRatio="none">
+                    <polygon fill="white" points="0,0 100,0 0,70" />
+                </svg>
+                <svg class="episodio-backgound-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                    preserveAspectRatio="none">
+                    <polygon fill="white" points="100,100 100,0 0,100" />
+                </svg>
+
+                <h2 class="melt-titulo">Episodios</h2>
+
+                <div class="lt-episodios-embed">
+                    <iframe class="embed1" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+                        allowfullscreen></iframe>
+                    <iframe class="embed2" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+                        allowfullscreen></iframe>
+                    <iframe class="embed3" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+                        allowfullscreen></iframe>
+                    <iframe class="embed4" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                        allowfullscreen></iframe>
+                </div>
+
+            </section>
+
+
+        </main>
+        <section id="dondeveni" class="dondeveni">
+            <img src="images/phone.png" alt="Mujer y celular" class="dondeveni-phone">
+            <div class="dondeveni_div">
+                <div class="dondeveni-titulo">
+                    <h2>De dónde venimos</h2>
+                </div>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the Universe, are challenged by this point of pale light. <br><br>Our planet is a lonely speck in
+                    the great enveloping cosmic dark. In
+                    our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us
+                    from ourselves..</p>
+            </div>
+
+        </section>
+        <section id="pc-gridimg" class="pc-gridimg">
+
+            <div class="titulo">
+                <h2>Invitadas/os estelares</h2>
+            </div>
+            <div class="invitados-img">
+                <img class="pc1" src="images/grace-hopper.png" alt="Grace Hopper" />
+                <img class="pc2" src="images/Katie-Bouman.png" alt="Katie Bouman" />
+                <img class="pc3" src="images/MargaretHamilton.png" alt="Margaret Hamilton" />
+                <img class="pc4" src="images/Univac.png" alt="An E.R.A.Univac 1103 computer in the 1950s" />
+                <img class="pc5" src="images/Computers.png"
+                    alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer" />
+                <img class="pc6" src="images/susan-kare.png" alt="Susan Kare" />
+            </div>
+        </section>
+        <section id="temas" class="temas">
+            <div class="temas-titulo">
+                <h2>Algunos de nuestros temas</h2>
+            </div>
+            <div class="contenedor-iconos">
+                <div class="iconos1">
+                    <img src="images/icon1.svg" alt="Trabajo remoto">
+                    <p>Trabajo remoto</p>
+                </div>
+                <div class="iconos2">
+                    <img src="images/icon2.svg" alt="Repensando la programación">
+                    <p>Repensando la programación</p>
+                </div>
+                <div class="iconos3">
+                    <img src="images/icon3.svg" alt="Bases del código">
+                    <p>Bases del código</p>
+                </div>
+                <div class="iconos4">
+                    <img src="images/icon4.svg" alt="Seguridad informática">
+                    <p>Seguridad informática</p>
+                </div>
+            </div>
+        </section>
+        <section class="novedades">
+            <svg class="episodio-backgound-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                preserveAspectRatio="none">
+                <polygon fill="white" points="0,0 100,0 0,70" />
+            </svg>
+            <h2>¿Querés las últimas novedades?</h2>
+            
+            <!-- <input type="button" id="btnnovedades" class="btn-channel" value="ESCUCHÁ LOS EPISODIOS"> -->
+            <a href="#episodios" class="btn-channel">ESCUCHÁ LOS EPISODIOS</a>
+        </section>
+        <footer>
+            <p>&copy; 2019— Hello blue pale dot </p>
+            <div class="redsocial">
+                <a href="https://www.spotify.com/ar/" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" ></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

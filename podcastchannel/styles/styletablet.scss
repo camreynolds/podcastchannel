@@ -1,0 +1,143 @@
+$colorfont:#060A24;
+
+@media all and (min-width: 768px) and (max-width:1199px) {
+    .contenedor-principal {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: "header header"
+            "main main"
+            "dondeveni temas"
+            "dondeveni temas"
+            "pc-gridimg pc-gridimg"
+            "novedades novedades"
+            "footer footer";
+    }
+
+    header {
+        height: 80px;
+        grid-template-columns: 7vw 1fr 4fr 6fr 7vw;
+        grid-template-rows: auto;
+        align-items: center;
+
+        #icon-burg-check,
+        .label-burg,
+        .label-equis {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+
+            ul {
+                height: unset;
+                background: unset;
+            }
+        }
+    }
+
+    .logo {
+        grid-column: 2;
+        width: 36px;
+        height: 36px;
+        background-size: 36px;
+    }
+
+    .menu {
+
+        grid-column: 4;
+        grid-row: 1;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: flex-end;
+
+            li {
+                a {
+                    color: $colorfont;
+
+                    &:hover {
+                        color: #00F3BB;
+                        text-decoration: line-through;
+                    }
+
+                    &:active {
+                        color: rgba(6, 10, 36, 0.56);
+                        text-decoration: line-through;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .main-container {
+        .lt-episodios {
+            .lt-episodios-embed {
+                
+                
+                iframe {
+                    width: 584px;
+                }
+            }
+        }
+    }
+
+    .dondeveni {
+        top: -170px;
+        margin-bottom: -100px;
+
+        .dondeveni_div {
+            .dondeveni-titulo {
+                width: unset;
+                text-align: center;
+            }
+        }
+    }
+
+    .temas {
+        .temas-titulo {
+            width: unset;
+            text-align: center;
+        }
+    }
+
+    .pc-gridimg {
+        .invitados-img {
+            grid-template-columns: repeat(2, minmax(320px, auto));
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: "pc1  pc2""pc3 pc4""pc5 pc6";
+        }
+    }
+    .novedades {
+        h2 {
+            width: unset;
+        }
+    }
+    footer {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3.125rem;
+
+        p {
+            margin-left: 0;
+        }
+
+        .redsocial {
+            margin-right: 3.125rem;
+
+            a {
+                color: $colorfont;
+                padding-right: 2.25rem;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

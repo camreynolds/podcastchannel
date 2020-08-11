@@ -1,0 +1,225 @@
+@media all and (min-width: 1200px) {
+  .contenedor-principal {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: (auto)[7];
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: "header header header" "main main main" "dondeveni dondeveni dondeveni" "pc-gridimg pc-gridimg pc-gridimg" "temas temas temas" "novedades novedades novedades" "footer footer footer";
+  }
+  /****************MENU********************/
+  header {
+    height: 80px;
+    -ms-grid-columns: 100px 1fr 4fr 6fr 100px;
+        grid-template-columns: 100px 1fr 4fr 6fr 100px;
+    -ms-grid-rows: 80px;
+        grid-template-rows: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #icon-burg-check,
+  header .label-burg,
+  header .label-equis {
+    display: none;
+  }
+  header .logo {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 36px;
+    height: 36px;
+    background-size: 36px;
+  }
+  header .menu {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    display: block;
+  }
+  header .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: unset;
+    background: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .menu ul li a {
+    color: #060A24;
+    font-weight: bold;
+  }
+  header .menu ul li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header .menu ul li a:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
+  }
+  /****************BOTONES*****************/
+  .btn-channel {
+    width: 226px;
+    height: 56px;
+  }
+  .main-container {
+    margin-top: 7.5rem;
+  }
+  .main-container .episodios {
+    margin-left: 12.5rem;
+  }
+  .main-container .episodios h1 {
+    font-size: 4rem;
+    letter-spacing: 0;
+    margin-left: 0;
+  }
+  .main-container .episodios h1::after {
+    color: #0000EC;
+  }
+  .main-container .episodios p {
+    margin-top: 20px;
+    margin-bottom: 3.5rem;
+    width: 628px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-left: 0;
+  }
+  .main-container .episodios p::before {
+    content: 'El portal de ';
+  }
+  .main-container .episodios .episodios-botones {
+    margin-left: 0;
+    display: unset;
+  }
+  .main-container .lt-episodios .melt-titulo {
+    margin: 186px 0 26px 200px;
+    font-size: 48px;
+  }
+  .main-container .lt-episodios .lt-episodios-embed {
+    margin-bottom: 232.6px;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "embed1 embed2" "embed3 embed4";
+    grid-gap: 72px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main-container .lt-episodios .lt-episodios-embed iframe {
+    width: 584px;
+    height: 232px;
+  }
+  .dondeveni {
+    margin-left: 12.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    top: -150px;
+    margin-bottom: -130px;
+  }
+  .dondeveni .dondeveni-phone {
+    width: 457.6px;
+    height: 660px;
+  }
+  .dondeveni .dondeveni_div {
+    margin: 190.6px 0 24px 62.4px;
+  }
+  .dondeveni .dondeveni_div .dondeveni-titulo {
+    width: unset;
+  }
+  .dondeveni .dondeveni_div h2 {
+    font-size: 48px;
+  }
+  .dondeveni .dondeveni_div p {
+    width: 464px;
+  }
+  .pc-gridimg .titulo {
+    width: unset;
+    margin-left: 200px;
+    margin-bottom: 36px;
+  }
+  .pc-gridimg .titulo h2 {
+    font-size: 48px;
+  }
+  .pc-gridimg .invitados-img {
+    -ms-grid-columns: (minmax(320px, auto))[3];
+        grid-template-columns: repeat(3, minmax(320px, auto));
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "pc1  pc2 pc3" "pc4 pc5 pc6";
+  }
+  .temas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin-top: 4rem;
+  }
+  .temas .temas-titulo {
+    width: unset;
+    margin-left: 12.5rem;
+    margin-bottom: 56px;
+  }
+  .temas .temas-titulo h2 {
+    font-size: 48px;
+  }
+  .temas .contenedor-iconos {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .temas .contenedor-iconos p {
+    margin-top: 29px;
+  }
+  .novedades h2 {
+    width: unset;
+    margin-top: 213px;
+    font-size: 48px;
+  }
+  .novedades .btn-channel {
+    width: 345px;
+    margin-top: 36px;
+    margin-bottom: 151px;
+  }
+  footer {
+    margin-left: 6.25rem;
+    height: 95px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .redsocial {
+    margin-right: 6.25rem;
+    font-size: 1.125rem;
+    color: #060A24;
+  }
+  footer .redsocial a {
+    color: #060A24;
+    padding-right: 2.25rem;
+  }
+  footer .redsocial a:last-child {
+    padding-right: 0;
+  }
+}
+/*# sourceMappingURL=styledesktop.css.map */

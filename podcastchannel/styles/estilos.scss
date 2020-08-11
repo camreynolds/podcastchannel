@@ -1,0 +1,33 @@
+$colorfont:#060A24;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace, 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+h1,
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: unset;
+    letter-spacing: 0;
+}
+span{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+a,
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    color: $colorfont;
+    letter-spacing: 0;
+}
+@import "stylephone.scss";
+@import"styletablet.scss";
+@import "styledesktop.scss";
